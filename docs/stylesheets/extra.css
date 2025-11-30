@@ -44,7 +44,7 @@ html[data-md-color-primary="blue"],
 /* ============================================
    MENU RIBBON / NAVIGATION TABS - COPPER
    ============================================ */
-/* Maximum specificity selectors for tabs */
+/* Maximum specificity selectors for tabs - ensure visibility */
 html .md-tabs,
 html body .md-tabs,
 .md-header ~ .md-tabs,
@@ -56,6 +56,8 @@ html body .md-tabs,
   background-color: #C47B3C !important; /* Copper */
   background: #C47B3C !important; /* Copper - no gradients */
   border-bottom: none !important;
+  display: block !important; /* Ensure tabs are visible */
+  visibility: visible !important;
 }
 
 html .md-tabs__list,
@@ -286,4 +288,11 @@ html body .md-tabs__link--active,
 /* Ensure footer copyright text is visible */
 .md-footer-copyright {
   color: inherit;
+  font-size: 0.8rem; /* Smaller text */
+}
+
+/* Add spacing between copyright and return link */
+.md-footer-copyright a {
+  margin-left: 1rem; /* Add padding between copyright and link */
+  display: inline-block;
 }
