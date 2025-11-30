@@ -6,6 +6,7 @@ repo_name: Infosourceful/infosourceful-docs
 
 theme:
   name: material
+  custom_dir: overrides
   features:
     - navigation.tabs
     - navigation.sections
@@ -26,10 +27,7 @@ extra_css:
   - stylesheets/extra.css
 
 # Footer customization
-extra:
-  copyright: |
-    Copyright &copy; 2025 Infosourceful. 
-    <a href="https://infosourceful.com">Return to infosourceful.com</a>
+copyright: Copyright &copy; 2025 Infosourceful
 
 markdown_extensions:
   - admonition
