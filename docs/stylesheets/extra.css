@@ -47,23 +47,46 @@
 }
 
 /* Menu ribbon / Navigation tabs - Copper background with white text */
-.md-tabs {
+/* Override Material theme primary color for tabs */
+:root {
+  --md-primary-fg-color: #C47B3C !important; /* Copper */
+  --md-primary-fg-color--light: #C47B3C !important;
+  --md-primary-fg-color--dark: #C47B3C !important;
+}
+
+[data-md-color-primary="indigo"] .md-tabs,
+[data-md-color-primary="blue"] .md-tabs,
+.md-tabs,
+.md-header[data-md-state="shadow"] ~ .md-tabs,
+.md-header ~ .md-tabs {
   background-color: #C47B3C !important; /* Copper */
   border-bottom: none;
+  background: #C47B3C !important; /* Copper - override any gradient */
+}
+
+.md-tabs__list {
+  background-color: #C47B3C !important; /* Copper */
+}
+
+.md-tabs__item {
+  background-color: transparent !important;
 }
 
 .md-tabs__link {
   color: #FFFFFF !important; /* White text */
+  background-color: transparent !important;
 }
 
 .md-tabs__link:hover {
   color: #FFFFFF !important; /* White text on hover */
-  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  opacity: 1;
 }
 
 .md-tabs__link--active {
   color: #FFFFFF !important; /* White text for active tab */
-  border-bottom-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  border-bottom-color: #FFFFFF !important;
   font-weight: 600;
 }
 
