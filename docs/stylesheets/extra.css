@@ -259,3 +259,31 @@ html body .md-tabs__link--active,
 .md-main a:not(.md-header__button):not(.md-search__result a):hover {
   color: #D18F4D !important;
 }
+
+/* ============================================
+   FOOTER CUSTOMIZATION
+   ============================================ */
+/* Hide "Made with Material for MkDocs" attribution */
+.md-footer-meta__inner .md-footer-copyright__highlight {
+  display: none !important;
+}
+
+.md-footer-meta__inner a[href*="squidfunk.github.io"] {
+  display: none !important;
+}
+
+/* Style footer links */
+.md-footer-meta__inner a,
+.md-footer-meta a {
+  color: #C47B3C !important;
+}
+
+.md-footer-meta__inner a:hover,
+.md-footer-meta a:hover {
+  color: #D18F4D !important;
+}
+
+/* Ensure footer copyright text is visible */
+.md-footer-copyright {
+  color: inherit;
+}

@@ -29,7 +29,7 @@ extra_css:
 extra:
   copyright: |
     Copyright &copy; 2025 Infosourceful. 
-    <a href="https://infosourceful.com" style="color: #C47B3C;">Return to infosourceful.com</a>
+    <a href="https://infosourceful.com">Return to infosourceful.com</a>
 
 markdown_extensions:
   - admonition
