@@ -160,44 +160,102 @@ html body .md-tabs__link--active,
 /* ============================================
    LINK COLORS - All Links Use Copper
    ============================================ */
-.md-typeset a {
+/* All content links */
+.md-typeset a,
+.md-content a,
+.md-main__inner a {
   color: #C47B3C !important; /* Copper - accent-primary for better contrast */
 }
 
-.md-typeset a:hover {
+.md-typeset a:hover,
+.md-content a:hover,
+.md-main__inner a:hover {
   color: #D18F4D !important; /* Lighter copper on hover */
 }
 
-.md-typeset a:focus {
+.md-typeset a:focus,
+.md-content a:focus,
+.md-main__inner a:focus {
   color: #C47B3C !important;
 }
 
-.md-typeset a:visited {
+.md-typeset a:visited,
+.md-content a:visited,
+.md-main__inner a:visited {
   color: #C47B3C !important;
 }
 
-.md-typeset code a {
+/* Code block links */
+.md-typeset code a,
+.md-content code a {
   color: #C47B3C !important;
 }
 
-.md-typeset code a:hover {
+.md-typeset code a:hover,
+.md-content code a:hover {
   color: #D18F4D !important;
 }
 
-.md-footer__link {
-  color: #C47B3C !important;
+/* Table of Contents links within pages */
+.md-nav--secondary .md-nav__link,
+.md-nav--integrated .md-nav__link,
+.md-sidebar--secondary .md-nav__link {
+  color: #C47B3C !important; /* Copper for TOC links */
 }
 
-.md-footer__link:hover {
+.md-nav--secondary .md-nav__link:hover,
+.md-nav--integrated .md-nav__link:hover,
+.md-sidebar--secondary .md-nav__link:hover {
   color: #D18F4D !important;
 }
 
+.md-nav--secondary .md-nav__link--active,
+.md-nav--integrated .md-nav__link--active,
+.md-sidebar--secondary .md-nav__link--active {
+  color: #C47B3C !important;
+  font-weight: 600;
+}
+
+/* Previous/Next navigation links */
+.md-footer__inner a,
+.md-footer__inner .md-footer__link {
+  color: #C47B3C !important;
+}
+
+.md-footer__inner a:hover,
+.md-footer__inner .md-footer__link:hover {
+  color: #D18F4D !important;
+}
+
+/* Breadcrumb links */
+.md-nav__item--section > .md-nav__link {
+  color: #C47B3C !important;
+}
+
+.md-nav__item--section > .md-nav__link:hover {
+  color: #D18F4D !important;
+}
+
+/* Admonition and details links */
 .md-typeset .admonition a,
-.md-typeset details a {
+.md-typeset details a,
+.md-content .admonition a,
+.md-content details a {
   color: #C47B3C !important;
 }
 
 .md-typeset .admonition a:hover,
-.md-typeset details a:hover {
+.md-typeset details a:hover,
+.md-content .admonition a:hover,
+.md-content details a:hover {
+  color: #D18F4D !important;
+}
+
+/* Catch-all for any remaining links */
+.md-main a:not(.md-header__button):not(.md-search__result a) {
+  color: #C47B3C !important;
+}
+
+.md-main a:not(.md-header__button):not(.md-search__result a):hover {
   color: #D18F4D !important;
 }
