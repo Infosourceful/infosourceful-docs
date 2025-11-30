@@ -1,0 +1,89 @@
+/* Custom theme colors for Infosourceful Docs */
+
+/* Header/Top bar styling */
+.md-header {
+  background-color: #F8F5EE !important; /* Parchment */
+}
+
+.md-header__title {
+  color: #1A1A1A !important; /* Graphite */
+}
+
+.md-header__button {
+  color: #1A1A1A !important; /* Graphite */
+}
+
+.md-header__button:hover {
+  color: #1A1A1A !important; /* Graphite */
+  opacity: 0.7;
+}
+
+/* Navigation text in header */
+.md-header__topic {
+  color: #1A1A1A !important; /* Graphite */
+}
+
+/* Search bar in header */
+.md-search__input {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #1A1A1A;
+}
+
+.md-search__input::placeholder {
+  color: #6F6F6F; /* Very muted text */
+}
+
+.md-search__input + .md-search__icon {
+  color: #1A1A1A;
+}
+
+/* Search results */
+.md-search__output {
+  background-color: #FFFFFF;
+}
+
+.md-search__output mark {
+  color: #1A1A1A;
+}
+
+/* Link colors - using High Confidence Blue for dark backgrounds */
+.md-typeset a {
+  color: #3b82f6; /* Blue - works well on dark backgrounds */
+}
+
+.md-typeset a:hover {
+  color: #60a5fa; /* Lighter blue on hover */
+}
+
+.md-typeset a:focus {
+  color: #3b82f6;
+}
+
+/* Navigation links */
+.md-nav__link {
+  color: inherit;
+}
+
+.md-nav__link:hover {
+  color: #3b82f6; /* Blue on hover */
+}
+
+/* Active navigation link */
+.md-nav__link--active {
+  color: #3b82f6; /* Blue for active links */
+}
+
+/* Code block links */
+.md-typeset code a {
+  color: #3b82f6;
+}
+
+/* Footer links */
+.md-footer__link {
+  color: #3b82f6;
+}
+
+.md-footer__link:hover {
+  color: #60a5fa;
+}
+

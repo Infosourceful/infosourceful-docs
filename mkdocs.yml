@@ -22,6 +22,8 @@ theme:
       scheme: slate
       primary: blue
       accent: amber
+extra_css:
+  - stylesheets/extra.css
 
 markdown_extensions:
   - admonition
@@ -31,6 +33,10 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
   - pymdownx.tasklist
+
+# Exclude private/internal documentation from builds
+exclude_docs: |
+  _private/**
 
 nav:
   - Home: index.md
