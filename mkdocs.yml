@@ -1,0 +1,66 @@
+site_name: Infosourceful Docs
+site_url: https://docs.infosourceful.com
+repo_url: https://github.com/Infosourceful/infosourceful-docs
+repo_name: Infosourceful/infosourceful-docs
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: amber
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: amber
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tasklist
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Install Desktop: getting-started/install-desktop.md
+      - Quickstart: getting-started/quickstart-binder.md
+  - Concepts:
+      - Bundles: concepts/bundles.md
+      - Facets & Provenance: concepts/facets-provenance.md
+      - Studios Overview: concepts/studios-overview.md
+  - Studios:
+      - Evidence Studio: studios/evidence-studio.md
+      - Structure Studio: studios/structure-studio.md
+      - Insight Studio: studios/insight-studio.md
+  - Kernel:
+      - Kernel v1 – Evidence: kernel/kernel-v1-evidence.md
+      - Kernel v2 – Structure: kernel/kernel-v2-structure.md
+      - Kernel v3 – Insight: kernel/kernel-v3-insight.md
+  - API:
+      - Overview: api/overview.md
+      - Evidence Endpoints: api/endpoints-evidence.md
+      - Reconstruction Endpoints: api/endpoints-reconstruction.md
+      - Interpretation Endpoints: api/endpoints-interpretation.md
+  - Packs:
+      - Evidence Packs: packs/evidence-packs.md
+      - Structure Packs: packs/structure-packs.md
+      - Insight Packs: packs/insight-packs.md
+  - Developer:
+      - Architecture: developer/architecture.md
+      - ADR Index: developer/adr-index.md
+      - Local Development: developer/local-dev.md
+  - Release Notes:
+      - All Releases: release-notes/index.md
+
