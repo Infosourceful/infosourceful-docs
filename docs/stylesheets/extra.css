@@ -158,46 +158,46 @@ html body .md-tabs__link--active,
 }
 
 /* ============================================
-   LINK COLORS - All Links Use Slate Blue
+   LINK COLORS - All Links Use Copper
    ============================================ */
 .md-typeset a {
-  color: #364B63 !important; /* Slate Blue - accent-secondary for links */
+  color: #C47B3C !important; /* Copper - accent-primary for better contrast */
 }
 
 .md-typeset a:hover {
-  color: #4A5F7A !important; /* Lighter Slate Blue on hover */
+  color: #D18F4D !important; /* Lighter copper on hover */
 }
 
 .md-typeset a:focus {
-  color: #364B63 !important;
+  color: #C47B3C !important;
 }
 
 .md-typeset a:visited {
-  color: #364B63 !important;
+  color: #C47B3C !important;
 }
 
 .md-typeset code a {
-  color: #364B63 !important;
+  color: #C47B3C !important;
 }
 
 .md-typeset code a:hover {
-  color: #4A5F7A !important;
+  color: #D18F4D !important;
 }
 
 .md-footer__link {
-  color: #364B63 !important;
+  color: #C47B3C !important;
 }
 
 .md-footer__link:hover {
-  color: #4A5F7A !important;
+  color: #D18F4D !important;
 }
 
 .md-typeset .admonition a,
 .md-typeset details a {
-  color: #364B63 !important;
+  color: #C47B3C !important;
 }
 
 .md-typeset .admonition a:hover,
 .md-typeset details a:hover {
-  color: #4A5F7A !important;
+  color: #D18F4D !important;
 }
