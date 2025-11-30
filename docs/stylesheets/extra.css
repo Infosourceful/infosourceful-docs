@@ -46,44 +46,106 @@
   color: #1A1A1A;
 }
 
-/* Link colors - using High Confidence Blue for dark backgrounds */
-.md-typeset a {
-  color: #3b82f6; /* Blue - works well on dark backgrounds */
+/* Menu ribbon / Navigation tabs - Copper background with white text */
+.md-tabs {
+  background-color: #C47B3C !important; /* Copper */
+  border-bottom: none;
 }
 
-.md-typeset a:hover {
-  color: #60a5fa; /* Lighter blue on hover */
+.md-tabs__link {
+  color: #FFFFFF !important; /* White text */
 }
 
-.md-typeset a:focus {
-  color: #3b82f6;
+.md-tabs__link:hover {
+  color: #FFFFFF !important; /* White text on hover */
+  opacity: 0.8;
 }
 
-/* Navigation links */
-.md-nav__link {
+.md-tabs__link--active {
+  color: #FFFFFF !important; /* White text for active tab */
+  border-bottom-color: #FFFFFF;
+  font-weight: 600;
+}
+
+/* Navigation sidebar */
+.md-nav {
   color: inherit;
 }
 
+.md-nav__title {
+  color: #1A1A1A; /* Graphite */
+}
+
+/* Link colors - using High Confidence Blue for dark backgrounds */
+.md-typeset a {
+  color: #3b82f6 !important; /* Blue - works well on dark backgrounds */
+}
+
+.md-typeset a:hover {
+  color: #60a5fa !important; /* Lighter blue on hover */
+}
+
+.md-typeset a:focus {
+  color: #3b82f6 !important;
+}
+
+.md-typeset a:visited {
+  color: #3b82f6 !important;
+}
+
+/* Navigation sidebar links */
+.md-nav__link {
+  color: #1A1A1A; /* Graphite */
+}
+
 .md-nav__link:hover {
-  color: #3b82f6; /* Blue on hover */
+  color: #C47B3C !important; /* Copper on hover */
 }
 
 /* Active navigation link */
 .md-nav__link--active {
-  color: #3b82f6; /* Blue for active links */
+  color: #C47B3C !important; /* Copper for active links */
 }
 
 /* Code block links */
 .md-typeset code a {
-  color: #3b82f6;
+  color: #3b82f6 !important;
+}
+
+.md-typeset code a:hover {
+  color: #60a5fa !important;
 }
 
 /* Footer links */
 .md-footer__link {
-  color: #3b82f6;
+  color: #3b82f6 !important;
 }
 
 .md-footer__link:hover {
-  color: #60a5fa;
+  color: #60a5fa !important;
+}
+
+/* Admonition links */
+.md-typeset .admonition a,
+.md-typeset details a {
+  color: #3b82f6 !important;
+}
+
+.md-typeset .admonition a:hover,
+.md-typeset details a:hover {
+  color: #60a5fa !important;
+}
+
+/* Table of contents links */
+.md-nav__item .md-nav__link {
+  color: #1A1A1A; /* Graphite */
+}
+
+.md-nav__item .md-nav__link:hover {
+  color: #C47B3C !important; /* Copper */
+}
+
+.md-nav__item .md-nav__link--active {
+  color: #C47B3C !important; /* Copper */
 }
 
